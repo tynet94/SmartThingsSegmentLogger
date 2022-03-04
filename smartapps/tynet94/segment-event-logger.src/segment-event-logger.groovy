@@ -63,6 +63,7 @@ def eventHandler(evt) {
         displayName: evt.displayName,
         hub: evt.hubId,
         locationName: evt.location.name,
+        value: evt.value,
         //locationId: evt.location.id,
         //locationMode: evt.location.mode,
         //locationTimezone: evt.location.timeZone,
