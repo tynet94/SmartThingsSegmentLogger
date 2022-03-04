@@ -1,5 +1,5 @@
 /**
- *  TrackingApiLogger
+ *  Segment Event Logger
  *
  *  Copyright 2022 Ty Alexander
  *
@@ -14,10 +14,10 @@
  *
  */
 definition(
-    name: "TrackingApiLogger",
+    name: "Segment Event Logger",
     namespace: "tynet94",
     author: "Ty Alexander",
-    description: "TrackingApiLogger",
+    description: "Segment Event Logger",
     category: "Convenience",
     iconUrl: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience.png",
     iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png",
