@@ -64,9 +64,6 @@ def eventHandler(evt) {
         hub: evt.hubId,
         locationName: evt.location.name,
         value: evt.value,
-        //locationId: evt.location.id,
-        //locationMode: evt.location.mode,
-        //locationTimezone: evt.location.timeZone,
       ] // properties
    ] // payload
 
@@ -77,14 +74,11 @@ def eventHandler(evt) {
      body: payload
    ]
 
-   log.debug("Sending event to Segment")
-   log.debug(params)
-
    try {
      httpPostJson(params) { resp ->
        log.debug "Logged event to Segment (${resp.status})"
      }
    } catch (e) {
-    log.error "Logging event to Segment failed: $e"
+    log.error "Failed to log event to Segment: $e"
    }
 }
