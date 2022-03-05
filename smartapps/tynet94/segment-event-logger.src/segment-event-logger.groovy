@@ -76,7 +76,7 @@ def eventHandler(evt) {
 
    try {
      httpPostJson(params) { resp ->
-       log.debug "Logged event to Segment (${resp.status})"
+       log.debug "Logged event to Segment (${resp.status})\n${params}"
      }
    } catch (e) {
     log.error "Failed to log event to Segment: $e"
