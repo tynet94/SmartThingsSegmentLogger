@@ -1,7 +1,7 @@
 # SmartThingsSegmentLogger
 
 ## Segment.com Setup
-1. Get a Segment.com account
+1. Sign up for a Segment.com account (or sign in if you already have one)
 1. Create a new Segment.com source for your smartthings location (aka `MySmartThingsLocation`)
 1. Get API Write Key from `Segment.com->Connections->Sources->MySmartThingsLocation->Settings->APIKey->WriteKey`
 1. Base64 encode your Write Key appended with a colon (no newline)
