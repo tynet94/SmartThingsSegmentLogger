@@ -47,7 +47,6 @@ def initialize() {
 
 def eventHandler(evt) {
     def payload = [
-      userId: "9000",
       event: "SmartThings Event",
       context: [
         app: [
