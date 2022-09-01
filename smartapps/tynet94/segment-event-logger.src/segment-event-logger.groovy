@@ -51,7 +51,7 @@ def initialize() {
 def eventHandler(evt) {
     def payload = [
       userId: evt.deviceId,
-      event: "SmartThings ${eve.name} Event",
+      event: "SmartThings ${evt.name} Event",
       context: [
         app: [
           name: "SmartThingsSegmentLogger",
