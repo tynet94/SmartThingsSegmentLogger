@@ -26,9 +26,12 @@ definition(
 preferences {
   section ("Segment Write Key") {
     input "segmentWriteKey", "text", title: "Segment Write Key", required: true
-    }
-    section("Log Switches:") {
-      input "switches", "capability.switch", multiple: true, required: false, title: "Forward it Segment for switches"
+  }
+  section("Log Switches:") {
+    input "switches", "capability.switch", multiple: true, required: false, title: "Forward it Segment for switches"
+  }
+  section("Log Switches:") {
+    input "switches", "capability.switch", multiple: true, required: false, title: "Forward it Segment for switches"
   }
 }
 
@@ -48,7 +51,7 @@ def initialize() {
 def eventHandler(evt) {
     def payload = [
       userId: evt.deviceId,
-      event: "SmartThings Event",
+      event: "SmartThings ${eve.name} Event",
       context: [
         app: [
           name: "SmartThingsSegmentLogger",
@@ -58,7 +61,7 @@ def eventHandler(evt) {
       properties: [
         date: evt.date,
         isoDate: evt.isoDate,
-        id: evt.id,
+        eventId: evt.id,
         name: evt.name,
         displayName: evt.displayName,
         hub: evt.hubId,
