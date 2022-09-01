@@ -46,6 +46,7 @@ def initialize() {
 }
 
 def eventHandler(evt) {
+    def evtId = "${evt.id}"
     def payload = [
       userId: evt.deviceId,
       event: "SmartThings Event",
@@ -59,7 +60,7 @@ def eventHandler(evt) {
         date: evt.date,
         isoDate: evt.isoDate,
         id: evt.id,
-        eventId: "'${evt.id}'",
+        eventId: evtId,
         name: evt.name,
         displayName: evt.displayName,
         hub: evt.hubId,
