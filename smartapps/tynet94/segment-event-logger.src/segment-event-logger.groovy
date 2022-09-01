@@ -30,9 +30,6 @@ preferences {
   section("Log Switches:") {
     input "switches", "capability.switch", multiple: true, required: false, title: "Forward it Segment for switches"
   }
-  section("Log Switches:") {
-    input "switches", "capability.switch", multiple: true, required: false, title: "Forward it Segment for switches"
-  }
 }
 
 def installed() {
