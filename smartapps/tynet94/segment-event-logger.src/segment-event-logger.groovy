@@ -59,7 +59,7 @@ def eventHandler(evt) {
         date: evt.date,
         isoDate: evt.isoDate,
         id: evt.id,
-        eventId: "${evt.id}",
+        eventId: "'${evt.id}'",
         name: evt.name,
         displayName: evt.displayName,
         hub: evt.hubId,
